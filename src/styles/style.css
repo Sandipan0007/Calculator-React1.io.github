@@ -1,0 +1,139 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: inherit;
+}
+
+:root{
+    --color--white: #fff;
+    --color--light-white: #eee;
+
+    --color--Lightlimegreen: #0cec7c;
+    --color-Verydarklimegreen-transparent: rgba(29, 85, 62, 0.9);
+    --color-Darklimegreen-transparent: rgba(34, 139, 48, 0.9);
+
+    --color-blue: #1aaa86;
+
+    --color-light-black: #222;
+    --color-black: #000;
+
+    --shadow: rgba(0, 0, .4);
+
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, var(--color-Darklimegreen-transparent), var(--color-Verydarklimegreen-transparent)), url(http://www.garrottdesigns.com/wp-content/uploads/2017/11/Art-Science.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calculator {
+      height: 80vh;
+      width: 25%;
+      box-shadow: 0 2rem 4rem var var(--shadow);
+      background-color: var(--color--light-white);
+  }
+
+  .result-screen {
+      height: 19vh;
+      font-size: 8rem;
+      font-weight: 600;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+  }
+
+  .computation-screen {
+    height: 6vh;
+    font-size: 2.5rem;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .screen {
+    height: 25vh;
+    width: 100%;
+    padding: 0 2rem;
+    overflow: hidden;
+    white-space: no-wrap;
+
+    color: var(--color--light-white);
+    background-color: var(--color-blue);
+}
+
+.keypad__row {
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    color: white;
+  }
+
+
+  .keypad {
+    height: 55vh;
+    width: 100%;
+  }
+
+
+  .btn {
+    width: 25%;
+    height: 100%;
+    font-size: 3rem;
+    font-family: inherit;
+    background-color: var(--color-white);
+    border: 1px solid transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+  }
+  .btn:hover {
+    color: var(--color--light-white);
+    background-color: var(--color--Lightlimegreen);
+  }
+  .btn:active {
+    transform: scale(.95);
+  }
+
+
+  .btn--large {
+    width: 50%;
+    color: var(--color--white);
+    background-color: var(--color--Lightlimegreen);
+    transition: all .2s;
+  }
+  .btn--large:hover {
+    background-color: var(--color--white);
+    color: var(--color--Lightlimegreen);
+  }
+
+  .btn--primary {
+    color: var(--color--Lightlimegreen);
+  }
+  .btn--operator {
+    color: var(--color-blue);
+  }
+
+
+
+
